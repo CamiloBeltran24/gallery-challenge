@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  padding: 3rem 1.2rem;
+}
+
+.profile {
+  width: 100%;
+  text-align: center;
+}
+.profile__picture {
+  width: 10.2rem;
+  height: 10.2rem;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+.profile__picture img {
+  width: 100%;
+}
+.profile__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4e5150;
+  margin-bottom: 0.4rem;
+}
+.profile__city {
+  color: #a9a9a9;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.profile .statsContainer {
+  display: grid;
+  grid-template-columns: repeat(3);
+}
+.profile .statsContainer .stat {
+  width: 7.8rem;
+  height: 5.2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

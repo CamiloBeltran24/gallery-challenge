@@ -1,0 +1,36 @@
+.profile {
+  width: 100%;
+  text-align: center;
+  &__picture {
+    // width: 100%;
+    width: 10.2rem;
+    height: 10.2rem;
+    // display: inline;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    img {
+      width: 100%;
+    }
+  }
+  &__name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $Bold_gray;
+    margin-bottom: 0.4rem;
+  }
+  &__city {
+    color: $soft_gray;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .statsContainer {
+    display: grid;
+    grid-template-columns: repeat(3);
+    .stat {
+      width: 7.8rem;
+      height: 5.2rem;
+    }
+  }
+}
