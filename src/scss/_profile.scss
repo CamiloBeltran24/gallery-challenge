@@ -1,5 +1,6 @@
 .profile {
   width: 100%;
+  margin-bottom: 4rem;
   text-align: center;
   &__picture {
     // width: 100%;
@@ -26,11 +27,37 @@
     margin-bottom: 1.2rem;
   }
   .statsContainer {
+    width: 100%;
+    max-width: 258px;
     display: grid;
-    grid-template-columns: repeat(3);
-    .stat {
-      width: 7.8rem;
-      height: 5.2rem;
+    grid-template-columns: repeat(3, 78px);
+    gap: 1.2rem;
+    margin: auto;
+    & {
+      &__stat {
+        // width: 100%;
+        height: 5.2rem;
+        background-color: $boxes_background;
+        border-radius: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // flex-wrap: wrap;
+        flex-direction: column;
+        .number {
+          margin-bottom: 0.2rem;
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $Bold_gray;
+        }
+        .statName {
+          font-size: 1.2rem;
+          color: $Gray4;
+          font-weight: 600;
+          text-transform: capitalize;
+          line-height: 15px;
+        }
+      }
     }
   }
 }
