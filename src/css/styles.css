@@ -15,6 +15,13 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  transition: all 0.3s ease;
+}
+body.dark {
+  background-color: #18161b;
+}
+
 .container {
   width: 100%;
   padding: 3rem 1.2rem;
@@ -22,12 +29,13 @@ html {
 }
 .container .darkmodeButton {
   position: absolute;
-  width: 6rem;
+  width: 5rem;
   height: 2.5rem;
 }
 .container .darkmodeButton label {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   position: relative;
   width: 100%;
   height: 100%;
@@ -36,25 +44,36 @@ html {
   background-color: #a9a9a9;
   padding: 0 2px;
   transition: 0.5s;
+  cursor: pointer;
+}
+.container .darkmodeButton label svg {
+  width: 1.5rem;
+  transition: all 1s ease;
+}
+.container .darkmodeButton label svg path {
+  fill: #4e5150;
 }
 .container .darkmodeButton label::after {
   content: "";
-  position: relative;
+  position: absolute;
   display: inline-block;
   top: 0;
   left: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 100%;
   background-color: white;
   border: 1px solid #bdbdbd;
   transition: all ease-in-out 0.5s;
 }
+.container .darkmodeButton label.dark {
+  background-color: #87c638;
+}
 .container .darkmodeButton input[type=checkbox] {
   display: none;
 }
 .container .darkmodeButton input[type=checkbox]:checked + label::after {
-  left: 60%;
+  left: 50%;
 }
 
 .profile {
@@ -66,18 +85,26 @@ html {
   width: 10.2rem;
   height: 10.2rem;
   margin: auto;
-  border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.2rem;
 }
 .profile__picture img {
   width: 100%;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.profile__picture img.dark {
+  border-color: #87c638;
 }
 .profile__name {
   font-size: 1.4rem;
   font-weight: 600;
   color: #4e5150;
   margin-bottom: 0.4rem;
+  transition: all 0.3s ease;
+}
+.profile__name.dark {
+  color: white;
 }
 .profile__city {
   color: #a9a9a9;
@@ -114,12 +141,25 @@ html {
   text-transform: capitalize;
   line-height: 15px;
 }
+.profile .statsContainer__stat.dark {
+  background-color: #87c638;
+  color: white;
+  transition: all 0.3s ease;
+}
+.profile .statsContainer__stat.dark .number {
+  color: white;
+  font-weight: 700;
+}
+.profile .statsContainer__stat.dark .statName {
+  color: rgba(233, 233, 233, 0.876);
+  font-weight: 400;
+}
 
 .galleryGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 10.9rem);
-  grid-template-rows: repeat(3, 10.9rem);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1.2rem;
 }
 .galleryGrid figure {
@@ -130,6 +170,7 @@ html {
 }
 .galleryGrid figure img {
   width: 100%;
+  height: 100%;
 }
 .galleryGrid figure:nth-child(1) {
   grid-column: 1/2;
@@ -154,6 +195,9 @@ html {
 .galleryGrid figure:nth-child(6) {
   grid-column: 1/2;
   grid-row: 3/4;
+}
+.galleryGrid.dark figure {
+  filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.15));
 }
 
 footer {

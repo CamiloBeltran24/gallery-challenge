@@ -8,11 +8,15 @@
     height: 10.2rem;
     // display: inline;
     margin: auto;
-    border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1.2rem;
     img {
       width: 100%;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      &.dark {
+        border-color: #87c638;
+      }
     }
   }
   &__name {
@@ -20,6 +24,10 @@
     font-weight: 600;
     color: $Bold_gray;
     margin-bottom: 0.4rem;
+    transition: all 0.3s ease;
+    &.dark {
+      color: white;
+    }
   }
   &__city {
     color: $soft_gray;
@@ -56,6 +64,19 @@
           font-weight: 600;
           text-transform: capitalize;
           line-height: 15px;
+        }
+        &.dark {
+          background-color: #87c638;
+          color: white;
+          transition: all 0.3s ease;
+          .number {
+            color: white;
+            font-weight: 700;
+          }
+          .statName {
+            color: rgba(233, 233, 233, 0.876);
+            font-weight: 400;
+          }
         }
       }
     }
