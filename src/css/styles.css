@@ -244,6 +244,12 @@ footer a {
   .profile .statsContainer__stat .statName {
     font-size: 1.4rem;
   }
+
+  .galleryGrid {
+    max-width: 100rem;
+    margin: auto;
+    gap: 3.2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 //        DESKTOP         //
 // ====================== //
 @media (min-width: 1024px) {
-  // PROFILE
+  // PROFILE //
   .profile {
     &__picture {
       width: 15.6rem;
@@ -34,5 +34,11 @@
         }
       }
     }
+  }
+  // GalleryGrid //
+  .galleryGrid {
+    max-width: 100rem;
+    margin: auto;
+    gap: 3.2rem;
   }
 }
