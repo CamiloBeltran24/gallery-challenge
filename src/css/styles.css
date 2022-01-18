@@ -215,7 +215,7 @@ footer a {
   color: #a9a9a9;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .profile__picture {
     width: 15.6rem;
     height: 15.6rem;
@@ -244,9 +244,20 @@ footer a {
   .profile .statsContainer__stat .statName {
     font-size: 1.4rem;
   }
+}
+@media (min-width: 1024px) {
+  .container .darkmodeButton {
+    width: 6rem;
+    height: 3rem;
+  }
+  .container .darkmodeButton label::after {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 
   .galleryGrid {
     max-width: 100rem;
+    max-height: 96.1rem;
     margin: auto;
     gap: 3.2rem;
   }

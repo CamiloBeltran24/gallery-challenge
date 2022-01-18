@@ -1,7 +1,7 @@
 // ====================== //
 //        DESKTOP         //
 // ====================== //
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   // PROFILE //
   .profile {
     &__picture {
@@ -35,9 +35,24 @@
       }
     }
   }
+}
+@media (min-width: 1024px) {
+  .container {
+    .darkmodeButton {
+      width: 6rem;
+      height: 3rem;
+      label {
+        &::after {
+          width: 2.8rem;
+          height: 2.8rem;
+        }
+      }
+    }
+  }
   // GalleryGrid //
   .galleryGrid {
     max-width: 100rem;
+    max-height: 96.1rem;
     margin: auto;
     gap: 3.2rem;
   }
