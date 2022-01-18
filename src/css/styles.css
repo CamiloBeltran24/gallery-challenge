@@ -250,6 +250,10 @@ footer a {
     margin: auto;
     gap: 3.2rem;
   }
+
+  footer {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
