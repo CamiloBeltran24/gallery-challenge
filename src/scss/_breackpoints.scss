@@ -1,0 +1,38 @@
+// ====================== //
+//        DESKTOP         //
+// ====================== //
+@media (min-width: 1024px) {
+  // PROFILE
+  .profile {
+    &__picture {
+      width: 15.6rem;
+      height: 15.6rem;
+      img {
+        border: 5px solid transparent;
+      }
+    }
+    &__name {
+      font-size: 2.4rem;
+    }
+    &__city {
+      font-size: 1.4rem;
+    }
+    .statsContainer {
+      grid-template-columns: repeat(3, 10rem);
+      grid-template-rows: 6.7rem;
+      max-width: 350px;
+      gap: 2.4rem;
+      & {
+        &__stat {
+          height: 100%;
+          .number {
+            font-size: 1.8rem;
+          }
+          .statName {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

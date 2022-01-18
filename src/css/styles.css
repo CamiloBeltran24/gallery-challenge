@@ -215,4 +215,35 @@ footer a {
   color: #a9a9a9;
 }
 
+@media (min-width: 1024px) {
+  .profile__picture {
+    width: 15.6rem;
+    height: 15.6rem;
+  }
+  .profile__picture img {
+    border: 5px solid transparent;
+  }
+  .profile__name {
+    font-size: 2.4rem;
+  }
+  .profile__city {
+    font-size: 1.4rem;
+  }
+  .profile .statsContainer {
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: 6.7rem;
+    max-width: 350px;
+    gap: 2.4rem;
+  }
+  .profile .statsContainer__stat {
+    height: 100%;
+  }
+  .profile .statsContainer__stat .number {
+    font-size: 1.8rem;
+  }
+  .profile .statsContainer__stat .statName {
+    font-size: 1.4rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
